@@ -1,2 +1,2 @@
-# JerrelsWebsite
-Creating my website using angular and node js
+#Jerrel's Website using React JS and MySql
+
