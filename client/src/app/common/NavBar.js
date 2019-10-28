@@ -3,7 +3,7 @@ const NavBar = () => {
   return (
     <nav className="grey lighten-3">
       <div className="nav-wrapper">
-        <a href="#" className="brand-logo center grey-text text-darken-3">
+        <a className="brand-logo center grey-text text-darken-3">
           Jerrel Sogoni
         </a>
       </div>
