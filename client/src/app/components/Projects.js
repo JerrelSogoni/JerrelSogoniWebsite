@@ -5,7 +5,9 @@ import "../styles/components.css";
 
 const Projects = () => {
   return (
-    <Parallax className="bg" bgImage={default_image} strength={500}></Parallax>
+    <Parallax bgImage={default_image} strength={500}>
+      <div className="bg">Insert Here</div>
+    </Parallax>
   );
 };
 

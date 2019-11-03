@@ -5,7 +5,9 @@ import "../styles/components.css";
 
 const AboutMe = () => {
   return (
-    <Parallax className="bg" bgImage={default_image} strength={200}></Parallax>
+    <Parallax bgImage={default_image} strength={200}>
+      <div className="bg">Insert Here</div>
+    </Parallax>
   );
 };
 
