@@ -1,7 +1,13 @@
 import React from "react";
+import { Parallax } from "react-parallax";
+import Typing from "react-typing-animation";
+import default_image from "../../assets/dumbo.jpg";
+import "../styles/components.css";
 
 const ContactMe = () => {
-  return <h1>ContactMe</h1>;
+  return (
+    <Parallax className="bg" bgImage={default_image} strength={500}></Parallax>
+  );
 };
 
 export default ContactMe;

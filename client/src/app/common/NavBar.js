@@ -11,5 +11,3 @@ const NavBar = () => {
   );
 };
 export default NavBar;
-
-//TODO: Make my name wrap correctly when displayed in resolution like an iphone 5
