@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+html body
+{
+  font-family: 'McLaren', cursive;
+}
+
 .bg {
   height: 100vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
@@ -6,3 +12,24 @@
   overflow-y: auto;
   perspective: 100px;
 }
+
+.center-screen{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.text-background
+{
+  background-color: rgb(105,105,105);
+  opacity:0.7;
+  border-radius: 5px;
+}
+.text-section
+{
+  color: white;
+
+}
+
