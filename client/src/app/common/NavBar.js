@@ -1,13 +1,13 @@
 import React from "react";
+import { Navbar } from "react-materialize";
 const NavBar = () => {
   return (
-    <nav className="grey lighten-3">
-      <div className="nav-wrapper">
-        <a className="brand-logo center grey-text text-darken-3">
-          Jerrel Sogoni
-        </a>
-      </div>
-    </nav>
+    <Navbar
+      className="grey lighten-3"
+      brand={<a className="grey-text text-darken-3">Jerrel Sogoni</a>}
+      centerLogo="true"
+      menuIcon=""
+    ></Navbar>
   );
 };
 export default NavBar;

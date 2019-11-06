@@ -5,6 +5,7 @@ import Landing from "./app/components/Landing";
 import AboutMe from "./app/components/AboutMe";
 import Projects from "./app/components/Projects";
 import ContactMe from "./app/components/ContactMe";
+import FooterBar from "./app/common/FooterBar";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       <Seperator name="Contact Me" />
       <ContactMe />
+      <FooterBar />
     </>
   );
 }

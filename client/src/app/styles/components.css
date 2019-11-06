@@ -4,6 +4,10 @@ html body
   font-family: 'McLaren', cursive;
 }
 
+p{
+  font-size: 20px;
+}
+
 .bg {
   height: 100vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
@@ -24,7 +28,7 @@ html body
 .text-background
 {
   background-color: rgb(105,105,105);
-  opacity:0.7;
+  opacity:0.8;
   border-radius: 5px;
 }
 .text-section
