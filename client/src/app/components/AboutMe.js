@@ -2,32 +2,32 @@ import React from "react";
 import { Parallax } from "react-parallax";
 import default_image from "../../assets/nyc.jpg";
 import "../styles/components.css";
-import { Row, Col, Button } from "react-materialize";
-import Typing from "react-typing-animation";
-
 const AboutMe = () => {
   return (
     <Parallax bgImage={default_image} strength={200}>
       <div className="bg container">
-        <Row>
-          <Col s={6}>
-            <h1 className="text-background text-section">Career</h1>
-          </Col>
-          <Col s={6}>
-            <h1 className="text-background text-section">Passion</h1>
-          </Col>
-        </Row>
-
-        <Row>
-          <Col s={6}>
+        <div className="row">
+          <div className="col s12">
+            <h1 className="text-background text-section center">Career</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col m12">
             <p className="text-background text-section">
-              I am SWE at Lockheed Martin and work with embedded system use
-              primarily C/C++ and Java. I working with hardware and software and
+              I am SWE at Lockheed Martin and work with embedded system using
+              primarily C/C++ and Java. I work with hardware and software and
               combining their capabilities to help develop a great product
               through agile development.
             </p>
-          </Col>
-          <Col s={6}>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col s12">
+            <h1 className="text-background text-section center">Passion</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col m12">
             <p className="text-background text-section">
               I enjoy creating ideas and turning them into actual products that
               can shown or interacted with. A few years ago I have created a
@@ -37,7 +37,7 @@ const AboutMe = () => {
               one of the realms of software I want to explore. There so many
               aspects with technology that can be created with great ideas that
               <b>
-                <i>Time </i>
+                <i> Time </i>
               </b>
               is a blocker!!
             </p>
@@ -48,18 +48,17 @@ const AboutMe = () => {
               daily life.
             </p>
             <div className="center">
-              <Button
-                node="a"
+              <a
+                className="text-background text-section btn waves-effect btn-flat"
                 href="http://blog.jerrelsogoni.com"
+                rel="noreferrer noopener"
                 target="_blank"
-                flat
-                className="text-background text-section"
               >
                 My Blog
-              </Button>
+              </a>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
     </Parallax>
   );

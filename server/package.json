@@ -4,7 +4,10 @@
   "description": "JerrelSogoniWebsite",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "server": "nodemon --exec babel-node server.js",
+    "client": "npm run start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,16 @@
   },
   "homepage": "https://github.com/JerrelSogoni/JerrelSogoniWebsite#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "@babel/plugin-proposal-private-methods": "^7.6.0",
+    "config": "^3.2.4",
+    "express": "^4.16.4",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/preset-env": "^7.7.1"
   }
 }

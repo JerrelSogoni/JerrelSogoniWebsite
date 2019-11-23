@@ -1,17 +1,16 @@
 import React from "react";
-import { Footer } from "react-materialize";
-
 const FooterBar = () => {
   const thisYear = new Date();
   return (
-    <Footer
-      copyrights={
-        <p className="grey-text text-darken-3">
-          {"Copyright © Jerrel Sogoni " + thisYear.getFullYear()}
-        </p>
-      }
-      className="center grey lighten-3"
-    ></Footer>
+    <footer className="page-footer grey lighten-3">
+      <div className="footer-copyright">
+        <div className="container center">
+          <p className="grey-text text-darken-3">
+            {"Copyright © Jerrel Sogoni " + thisYear.getFullYear()}
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
 
