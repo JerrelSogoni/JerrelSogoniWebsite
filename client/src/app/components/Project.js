@@ -8,6 +8,7 @@ const Project = ({ project }) => {
   const dateFormat = "dddd, MMMM Do YYYY";
   const projectLeaders = Object.entries(project.projectLeaders);
   const collaborators = Array.from(project.collaborators);
+  const sites = Object.entries(project.links);
   const renderCollaborators = () => {
     return collaborators.map(person => {
       return (
@@ -31,13 +32,23 @@ const Project = ({ project }) => {
       );
     });
   };
+  const renderSites = () => {
+    return sites.map(([key, value]) => {
+      return (
+        <div key={key}>
+          <div className="divider"></div>
+          {key}: <a href={value}>{value}</a>
+          <div className="divider"></div>
+        </div>
+      );
+    });
+  };
   return (
     <div>
       <div className="center">
         <h4> {project.name}</h4>
         <img className="projectModal" src={image} alt={project.name}></img>
       </div>
-
       <p>{project.description}</p>
       <div>
         {projectLeaders.length ? (
@@ -54,6 +65,16 @@ const Project = ({ project }) => {
           <div>
             <h4>Collaborator{collaborators.length > 1 ? "s" : ""}</h4>
             <div>{renderCollaborators()}</div>
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
+      <div>
+        {sites.length ? (
+          <div>
+            <h4>Project Sites{sites.length > 1 ? "s" : ""}</h4>
+            <ul>{renderSites()}</ul>
           </div>
         ) : (
           ""

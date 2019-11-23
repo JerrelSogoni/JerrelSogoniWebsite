@@ -24,7 +24,7 @@ personalWebsiteAngular.description =
   "My website is written using Angular 2 for the front end design and PHP for the backend process. My website dynamically pulled from MySQL Database. Emailing service uses POST method to get form information to send out an email to me. Learned core concepts of Angular 2 and PHP.";
 personalWebsiteAngular.addLinks(
   "github",
-  "https://github.com/JerrelSogoni/My-Website"
+  "https://github.com/JerrelSogoni/JerrelSogoniWebsite"
 );
 personalWebsiteAngular.startDate = new Date(2017, 6, 9);
 personalWebsiteAngular.endDate = new Date(2017, 6, 28);
@@ -64,6 +64,10 @@ hydroPiOnics.description =
 hydroPiOnics.startDate = new Date(2016, 6, 26);
 hydroPiOnics.endDate = new Date(2016, 8, 15);
 hydroPiOnics.addLinks("github", "https://github.com/JerrelSogoni/HydroPiOnics");
+hydroPiOnics.addLinks(
+  "blog",
+  "http://blog.jerrelsogoni.com/blog/2016/06/26/raspberry-pi-hydroponics-project"
+);
 const profilePlus = new Project("Profile Plus");
 profilePlus.addCollaborator(jerrelSogoni);
 profilePlus.addCollaborator(danielSoh);
