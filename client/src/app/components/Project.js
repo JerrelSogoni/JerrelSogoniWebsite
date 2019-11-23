@@ -35,7 +35,7 @@ const Project = ({ project }) => {
     <div>
       <div className="center">
         <h4> {project.name}</h4>
-        <img className="projectModal" src={image}></img>
+        <img className="projectModal" src={image} alt={project.name}></img>
       </div>
 
       <p>{project.description}</p>
