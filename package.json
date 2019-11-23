@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client/ && npm install && npm run build",
     "server": "nodemon --exec babel-node server.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
