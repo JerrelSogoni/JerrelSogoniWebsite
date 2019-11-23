@@ -4,7 +4,7 @@
   "description": "JerrelSogoniWebsite",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon --exec babel-node server.js",
     "server": "nodemon --exec babel-node server.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
