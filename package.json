@@ -4,8 +4,9 @@
   "description": "JerrelSogoniWebsite",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "npm run production",
     "heroku-postbuild": "npm install --prefix client && npm run build --prefix client",
+    "production":"babel-node server.js",
     "server": "nodemon --exec babel-node server.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
