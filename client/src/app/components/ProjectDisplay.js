@@ -5,7 +5,7 @@ const images = require.context("../../assets", true);
 const ProjectDisplay = ({ projectName, projectImage }) => {
   const image = images(`${projectImage}`);
   return (
-    <div className="hvrbox">
+    <div className="hvrbox hoverable">
       <img
         className="projectDisplay hvrbox-layer_bottom"
         src={image}

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run production",
     "heroku-postbuild": "npm install --prefix client && npm run build --prefix client",
-    "production":"babel-node server.js",
+    "production": "babel-node server.js",
     "server": "nodemon --exec babel-node server.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
@@ -30,7 +30,9 @@
     "@babel/preset-env": "^7.7.1",
     "concurrently": "^5.0.0",
     "config": "^3.2.4",
+    "email-templates": "^6.0.4",
     "express": "^4.16.4",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "pug": "^2.0.4"
   }
 }
