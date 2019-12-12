@@ -6,6 +6,7 @@ const contactMe = require("./api/contact");
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.json());
 app.use("/api", projects);
 app.use("/api", contactMe);
 

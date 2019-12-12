@@ -1,23 +1,42 @@
-const nodemailer = require("nodemailer");
-
+const Email = require("email-templates");
 const keys = require("../config/keys");
+const path = require("path");
 
-class Mailer extends nodemailer {
-  constructor({ name, email, message }) {
-    super();
-    this.transporter = nodemailer.createTransport({
-      host: keys.emailOutgoingServer,
-      port: keys.emailPort,
-      secure: true, // true for 465, false for other ports
-      auth: {
-        user: keys.emailUsername,
-        pass: keys.emailPassword
+class Mailer {
+  constructor(name, email, message, template) {
+    this.contact = { name, email, message };
+    this.template = template;
+    this.emailer = new Email({
+      views: { root: path.resolve("services") },
+      message: {
+        from: keys.emailUsername
+      },
+      send: true,
+      transport: {
+        host: keys.emailOutgoingServer,
+        port: keys.emailPort,
+        secure: true, // true for 465, false for other ports
+        auth: {
+          user: keys.emailUsername,
+          pass: keys.emailPassword
+        }
       }
     });
+  }
 
-    this.subject = "<div>" + name + "messaged you!!" + "</div>";
-    this.to_email = email;
-    this.message = "";
+  async sendEmail() {
+    try {
+      const result = await this.emailer.send({
+        template: this.template,
+        message: {
+          to: keys.emailUsername
+        },
+        locals: this.contact
+      });
+      return result ? true : false;
+    } catch (err) {
+      return false;
+    }
   }
 }
 
