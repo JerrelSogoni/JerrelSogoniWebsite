@@ -1,3 +1,3 @@
 module.exports = {
-  googleReCaptcha: process.env.GOOGLE_RECAPTCHA
+  googleReCaptcha: process.env.REACT_APP_GOOGLE_RECAPTCHA
 };
