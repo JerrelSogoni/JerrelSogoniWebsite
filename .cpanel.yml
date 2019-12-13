@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jerrkfcd/public_html/
+    - /bin/cp -R /home/jerrkfcd/repositories/* $DEPLOYPATH
