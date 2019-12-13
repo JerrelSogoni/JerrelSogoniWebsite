@@ -24,8 +24,8 @@ class Projects {
       "github",
       "https://github.com/JerrelSogoni/JerrelSogoniWebsite"
     );
-    personalWebsiteAngular.startDate = new Date(2017, 6, 9);
-    personalWebsiteAngular.endDate = new Date(2017, 6, 28);
+    personalWebsiteAngular.startDate = new Date(2017, 5, 9);
+    personalWebsiteAngular.endDate = new Date(2017, 5, 28);
 
     const personalWebsiteReact = new Project("Personal React Website");
     personalWebsiteReact.addProjectLeadership("Creator", jerrelSogoni);
@@ -36,6 +36,9 @@ class Projects {
       "github",
       "https://github.com/JerrelSogoni/JerrelSogoniWebsite"
     );
+
+    personalWebsiteReact.startDate = new Date(2017, 9, 22);
+    personalWebsiteReact.endDate = new Date(2017, 11, 13);
     const umlApplication = new Project(
       "JClassDesigner UML Diagram Java Application"
     );
@@ -43,8 +46,8 @@ class Projects {
     umlApplication.addImage("main", "./uml.png");
     umlApplication.description =
       "This project was given from Stony Brook's Course, CSE 219 Computer Science III, which is a Java written application using JavaFX framework. The project follows a MVC, model view controller, design pattern. This project aims to make UML diagrams and export java boilerplate code extracted from the application.";
-    umlApplication.startDate = new Date(2016, 3, 31);
-    umlApplication.endDate = new Date(2016, 5, 9);
+    umlApplication.startDate = new Date(2016, 2, 31);
+    umlApplication.endDate = new Date(2016, 4, 9);
     const lawnMoverApplication = new Project(
       "Lawn Mower Game MIPS Assembly Code"
     );
@@ -52,8 +55,8 @@ class Projects {
     lawnMoverApplication.addImage("main", "./mips.png");
     lawnMoverApplication.description =
       "This project was given from a Stony Brook's Course, CSE 220, which was a lawn mower game written in MIPS Assembly Code. It would detect if a box color was not bold then mow it to bold it indicating that is mowed already. This game test for collision control such as the mower cannot go through water -> blue boxes.";
-    lawnMoverApplication.startDate = new Date(2015, 10, 20);
-    lawnMoverApplication.endDate = new Date(2015, 11, 10);
+    lawnMoverApplication.startDate = new Date(2015, 9, 20);
+    lawnMoverApplication.endDate = new Date(2015, 10, 10);
 
     const hydroPiOnics = new Project(
       "Raspberry Pi Automated Hydroponics System"
@@ -63,8 +66,8 @@ class Projects {
     hydroPiOnics.addImage("main", "./hydroponics.jpg");
     hydroPiOnics.description =
       "This Raspberry Pi project's purpose is to create a self flourishable environment for any plant to grow using the Raspberry Pi to control necessary components such as sensors and water pumps and much more. In addition, creating a Python GUI made from scratch with the boa constructor application to create the front-end code. This project follows a MVC design pattern and is solely written in Python.";
-    hydroPiOnics.startDate = new Date(2016, 6, 26);
-    hydroPiOnics.endDate = new Date(2016, 8, 15);
+    hydroPiOnics.startDate = new Date(2016, 5, 26);
+    hydroPiOnics.endDate = new Date(2016, 7, 15);
     hydroPiOnics.addLinks(
       "github",
       "https://github.com/JerrelSogoni/HydroPiOnics"
@@ -80,8 +83,8 @@ class Projects {
     profilePlus.addImage("main", "./profileplus.png");
     profilePlus.description =
       "Project made in CSE 305, Principles of Database System course, at Stony Brook University. Profile Plus is a social media site. Users can register, message others, post on other user's post, create groups, join groups. I collaborated with 2 fellow Stony Brook Students. I primarily worked on the front-end design using XHTML, CSS, and Bootstrap framework. I also worked on the backend with the interaction with the database, we used JavaFaces (JSF) and MySQL and also follows a MVC design pattern.";
-    profilePlus.startDate = new Date(2016, 11, 21);
-    profilePlus.endDate = new Date(2016, 12, 9);
+    profilePlus.startDate = new Date(2016, 10, 21);
+    profilePlus.endDate = new Date(2016, 11, 9);
     profilePlus.addLinks("github", "https://github.com/JerrelSogoni/Profile-");
     const sbuIfy = new Project("SBUify");
     sbuIfy.addCollaborator(jerrelSogoni);
@@ -90,8 +93,8 @@ class Projects {
     sbuIfy.addImage("main", "./cse308.png");
     sbuIfy.description =
       "CSE 308 group project using Spring MVC backend and Angular 2 frontend.";
-    sbuIfy.startDate = new Date(2017, 10, 27);
-    sbuIfy.endDate = new Date(2017, 11, 12);
+    sbuIfy.startDate = new Date(2017, 9, 27);
+    sbuIfy.endDate = new Date(2017, 10, 12);
 
     this.projects.push(
       personalWebsiteAngular,

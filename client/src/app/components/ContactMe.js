@@ -8,8 +8,12 @@ const ContactMe = () => {
   return (
     <Parallax bgImage={default_image} strength={500}>
       <div className="bg">
-        <div className="container center-screen">
-          <ContactMeForm></ContactMeForm>
+        <div className="container">
+          <div className="row">
+            <div className="col s12">
+              <ContactMeForm></ContactMeForm>
+            </div>
+          </div>
         </div>
       </div>
     </Parallax>
