@@ -9,7 +9,8 @@
     "production": "babel-node server.js",
     "server": "nodemon --exec babel-node server.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "website": "npm run heroku-postbuild && npm run production"
   },
   "repository": {
     "type": "git",
