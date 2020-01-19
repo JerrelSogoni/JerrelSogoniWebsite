@@ -15,9 +15,9 @@ const AboutMe = () => {
           <div className="col m12">
             <p className="text-background text-section">
               I am SWE at Lockheed Martin and work with embedded system using
-              primarily C/C++ and Java. I work with hardware and software and
-              combining their capabilities to help develop a great product
-              through agile development.
+              primarily C/C++ and Java. I work with hardware and software to
+              combine their capabilities to help develop a great product through
+              agile development.
             </p>
           </div>
         </div>
